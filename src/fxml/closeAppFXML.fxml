@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?package fxml?>
+<?import controllers.*?>
+<?import objects.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Are you sure you want to exit the app?">
+         <VBox.margin>
+            <Insets bottom="40.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+         <children>
+            <Button fx:id="yesButton" mnemonicParsing="false" onAction="#onYesButtonPressed" text="Yes" />
+            <Button fx:id="noButton" mnemonicParsing="false" onAction="#onNoButtonPressed" text="No" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

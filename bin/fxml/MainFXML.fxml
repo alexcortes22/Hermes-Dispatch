@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?package fxml?>
+<?import controllers.*?>
+<?import objects.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainWindowController">
+   <center>
+      <TableView fx:id="jobTable" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="pickUpColumn" prefWidth="200.0" text="Pick Up" />
+          <TableColumn fx:id="dropOffColumn" prefWidth="75.0" text="Drop Off" />
+          <TableColumn fx:id="phoneColumn" prefWidth="75.0" text="Phone" />
+          <TableColumn fx:id="timeColumn" prefWidth="75.0" text="Time" />
+          <TableColumn fx:id="driverColumn" prefWidth="75.0" text="Driver" />
+          <TableColumn fx:id="completedColumn" prefWidth="75.0" text="Completed" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Label" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Label text="Label" />
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?package fxml?>
+<?import controllers.*?>
+<?import objects.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="600.0" spacing="30.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.JobController">
+   <children>
+      <HBox spacing="30.0">
+         <children>
+            <TextField fx:id="phoneNum" promptText="Phone" />
+            <TextField fx:id="date" layoutX="20.0" layoutY="20.0" promptText="Date" />
+            <TextField fx:id="time" promptText="Time" />
+            <TextField fx:id="driver" promptText="Driver" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="20.0">
+         <children>
+            <TextArea fx:id="pickUp" prefHeight="186.0" prefWidth="484.0" promptText="Pickup Address" />
+            <TextField fx:id="customer" promptText="Customer Name">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="215.0" prefWidth="580.0" spacing="20.0">
+         <children>
+            <TextArea fx:id="dropOff" prefHeight="51.0" prefWidth="488.0" promptText="Dropoff Address" />
+            <TextField fx:id="price" promptText="Price" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <TextArea fx:id="notes" prefHeight="200.0" prefWidth="200.0" promptText="Notes" />
+      <Button fx:id="saveButton" alignment="CENTER" mnemonicParsing="false" onAction="#onSaveButtonClicked" text="Save" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
